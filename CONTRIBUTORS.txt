@@ -1,0 +1,76 @@
+The following is a list of contributors to this project:
+
+Project coordinators
+--------------------
+Moxvallix
+NiceMicro
+w4e
+
+Team leaders
+------------
+Programming: Monban
+Art: Bestonecrazy + Moxvallix
+Game Design: Gobbel
+Branding: TheRyeGuyWhoWillNowDie
+Translations: GrbavaCigla
+
+Programming
+-----------
+Monban
+TheSecondReal0
+TheRyeGuyWhoWillNowDie
+vincens2005
+Darshadi
+zapzoop0099
+GrbavaCigla
+NiceMicro
+Vainiovano
+Damjan94
+jngo102
+tooManyArguments
+Moxvallix
+Macmv
+Evolve2k
+Wandang
+Daniel071
+MGThePro
+Random2Nothing
+Timparktimpark
+Gobbel2000
+Zapzoop0099
+Orangemn6
+TheEvilSkeleton
+Dleboulanger
+DimiKrik
+DanielKinsman
+1eldiego
+
+Art
+---
+Luke_Connor
+Moxvallix
+rand_0moide
+PRIME
+Gai_
+Orangemn6
+jngo102
+NiceMicro
+
+Game design
+-----------
+Gobbel
+TheRyeGuyWhoWillNowDie
+Moxvallix
+NiceMicro
+TheSecondReal0
+Gai_
+Wandang
+1diego
+Daniel071
+Botatokde
+Darshadi
+w4e
+
+Hall Of Fame:
+-------------
+Luke Connor - Previous art team leader | October - November 2020

@@ -1,0 +1,189 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "IPoolable",
+"class": "BackgroundObject",
+"language": "GDScript",
+"path": "res://assets/maps/lobby/background_object.gd"
+}, {
+"base": "Control",
+"class": "ControlBase",
+"language": "GDScript",
+"path": "res://assets/common/classes/ui/base/controlbase.gd"
+}, {
+"base": "ControlBase",
+"class": "ControlTask",
+"language": "GDScript",
+"path": "res://assets/common/classes/ui/task/controltask.gd"
+}, {
+"base": "Node2D",
+"class": "IPoolable",
+"language": "GDScript",
+"path": "res://assets/common/classes/objectpool/ipoolable.gd"
+}, {
+"base": "Node",
+"class": "PoolManager",
+"language": "GDScript",
+"path": "res://assets/common/classes/objectpool/poolmanager.gd"
+}, {
+"base": "Popup",
+"class": "PopupBase",
+"language": "GDScript",
+"path": "res://assets/common/classes/ui/base/popupbase.gd"
+}, {
+"base": "PopupPanel",
+"class": "PopupPanelBase",
+"language": "GDScript",
+"path": "res://assets/common/classes/ui/base/popuppanelbase.gd"
+}, {
+"base": "PopupPanelBase",
+"class": "PopupPanelTask",
+"language": "GDScript",
+"path": "res://assets/common/classes/ui/task/popuppaneltask.gd"
+}, {
+"base": "PopupBase",
+"class": "PopupTask",
+"language": "GDScript",
+"path": "res://assets/common/classes/ui/task/popuptask.gd"
+}, {
+"base": "WindowDialog",
+"class": "WindowDialogBase",
+"language": "GDScript",
+"path": "res://assets/common/classes/ui/base/windowdialogbase.gd"
+}, {
+"base": "WindowDialogBase",
+"class": "WindowDialogTask",
+"language": "GDScript",
+"path": "res://assets/common/classes/ui/task/windowdialogtask.gd"
+} ]
+_global_script_class_icons={
+"BackgroundObject": "",
+"ControlBase": "",
+"ControlTask": "",
+"IPoolable": "",
+"PoolManager": "",
+"PopupBase": "",
+"PopupPanelBase": "",
+"PopupPanelTask": "",
+"PopupTask": "",
+"WindowDialogBase": "",
+"WindowDialogTask": ""
+}
+
+[application]
+
+config/name="opensuspect"
+run/main_scene="res://assets/ui/mainmenu/mainmenu.tscn"
+config/use_custom_user_dir=true
+boot_splash/image="res://assets/common/textures/icons/bootsplash.png"
+config/icon="res://assets/common/textures/icons/icon.png"
+config/version="dev"
+
+[autoload]
+
+Network="*res://assets/autoload/network.gd"
+GameManager="*res://assets/autoload/gamemanager.gd"
+PlayerManager="*res://assets/autoload/playermanager.gd"
+SceneManager="*res://assets/autoload/scenemanager.gd"
+UIManager="*res://assets/autoload/uimanager.gd"
+MapManager="*res://assets/autoload/mapmanager.gd"
+TaskManager="*res://assets/autoload/taskmanager.gd"
+Helpers="*res://assets/autoload/helpers.gd"
+SaveLoadHandler="*res://assets/autoload/save_load_handler.gd"
+
+[display]
+
+window/dpi/allow_hidpi=true
+window/stretch/mode="2d"
+window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "opensusinteraction" )
+
+[gui]
+
+theme/custom_font="res://assets/common/fonts/menufont.tres"
+
+[input]
+
+ui_left={
+"deadzone": 0.1,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777231,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":14,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":0,"axis":0,"axis_value":-1.0,"script":null)
+ ]
+}
+ui_right={
+"deadzone": 0.1,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777233,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":15,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":0,"axis":0,"axis_value":1.0,"script":null)
+ ]
+}
+ui_up={
+"deadzone": 0.1,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777232,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":12,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":0,"axis":1,"axis_value":-1.0,"script":null)
+ ]
+}
+ui_down={
+"deadzone": 0.1,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777234,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":13,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":0,"axis":1,"axis_value":1.0,"script":null)
+ ]
+}
+ui_page_up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777235,"unicode":0,"echo":false,"script":null)
+ ]
+}
+kill={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":70,"unicode":0,"echo":false,"script":null)
+ ]
+}
+reload={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":82,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[layer_names]
+
+2d_physics/layer_1="terrain"
+2d_physics/layer_2="players"
+2d_physics/layer_3="scientists"
+2d_physics/layer_4="infiltrators"
+2d_physics/layer_6="corpse"
+
+[locale]
+
+translations=PoolStringArray( "res://locale/de.po", "res://locale/el.po", "res://locale/en.po", "res://locale/es.po", "res://locale/fr.po", "res://locale/hu.po", "res://locale/ko.po", "res://locale/ro.po", "res://locale/sr.po", "res://locale/sv.po" )
+locale_filter=[ 0, [  ] ]
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_clear_color=Color( 0.121569, 0.121569, 0.121569, 1 )
+environment/default_environment="res://default_env.tres"
